@@ -1,0 +1,204 @@
+html,
+body {
+    height: 100%;
+    color: white;
+    background-color: #FFD700;
+    width: 100%;
+    background-image: url(http://4kwallpaper.org/wp-content/uploads/2016/09/tumblr-wallpapers6.jpg);
+    /*http://4kwallpaper.org/wp-content/uploads/2016/09/tumblr-wallpapers3.jpg;*/
+    background-size: auto;
+    background-attachment: fixed;
+    font-family: 'Lobster', cursive;
+    margin: 0;
+}
+
+
+#otherWikiArticle,#ZoneAffichageMusic,#ZoneAffichageArtiste,#ZoneAffichageLivre,#ZoneAffichageTableau {
+    font-family: 'PT Sans', sans-serif;
+    background-color: White;
+    color: black;
+    width: 100%;
+    text-align: center;
+    vertical-align: top;
+}
+#ZoneAffichageFilm {
+    font-family: 'PT Sans', sans-serif;
+    background-color: White;
+    color: black;
+    width: 100%;
+    text-align: left;
+}
+
+
+#imageTableau {
+    height: 50%;
+    width: 50%;
+}
+
+img, embed { 
+    display: block; 
+    margin: 0 auto; 
+    height: 30%;
+    width: 15%;
+} 
+
+
+
+input {
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+}
+
+h1 {
+    font-family: 'Rubik Mono One', sans-serif;
+    display: flex;
+    flex-direction: column;
+    /* direction d'affichage verticale */
+    justify-content: center;
+    /* alignement vertical */
+    height: 10%;
+    background-color: #34495E;
+    color: #39D2B4;
+    text-align: center;
+}
+
+h2,
+h3,
+h4,
+p {
+    text-align: center;
+}
+
+textarea {
+    font-family: 'PT Sans', sans-serif;
+    text-align: left;
+}
+
+
+/*
+            CSS code bouton
+    */
+
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+    position: relative;
+    padding-left: 8%;
+    cursor: pointer;
+}
+
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before,
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+    content: '';
+    position: absolute;
+}
+
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+    left: 0;
+    top: -3px;
+    width: 65px;
+    height: 30px;
+    background: #DDDDDD;
+    border-radius: 15px;
+    -webkit-transition: background-color .2s;
+    -moz-transition: background-color .2s;
+    -ms-transition: background-color .2s;
+    transition: background-color .2s;
+}
+
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+    width: 20px;
+    height: 20px;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    transition: all .2s;
+    border-radius: 50%;
+    background: #7F8C9A;
+    top: 2px;
+    left: 5px;
+}
+
+
+/* on checked */
+
+[type="checkbox"]:checked + label:before {
+    background: #34495E;
+}
+
+[type="checkbox"]:checked + label:after {
+    background: #39D2B4;
+    top: 2px;
+    left: 40px;
+}
+
+[type="checkbox"]:checked + label .ui,
+[type="checkbox"]:not(:checked) + label .ui:before,
+[type="checkbox"]:checked + label .ui:after {
+    position: absolute;
+    left: -7%;
+    width: 65px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 22px;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    transition: all .2s;
+}
+
+[type="checkbox"]:not(:checked) + label .ui:before {
+    content: "no";
+    left: 5%;
+}
+
+[type="checkbox"]:checked + label .ui:after {
+    content: "yes";
+    color: #39D2B4;
+}
+
+[type="checkbox"]:focus + label:before {
+    border: 1px dashed #777;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: -1px;
+}
+
+
+/* CSS input text */
+
+input[type="text"] {
+    color: #FF7F50;
+    height: 40%;
+    width: 30%;
+    font-size: 20px;
+    font-family: 'Baloo', cursive;
+    background-color: #DDDDDD;
+    border-radius: 10px;
+    text-align: center;
+}
+
+input[type="submit"] {
+    color: #34495E;
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+    font-family: 'Baloo', cursive;
+    background-color: #008080;
+    border-radius: 10px;
+    border-color: #008080;
+    text-align: center;
+}
